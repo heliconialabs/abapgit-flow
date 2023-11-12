@@ -1,3 +1,9 @@
 == Development
 
-todo
+scoping: reduce task size, deploy often
+
+development guidelines impact: packages, message classes, reduce size
+
+examples
+
+Technical Quality assurance & Functional Quality assurance

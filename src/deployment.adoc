@@ -9,3 +9,13 @@ Transport of copies
 Heliconia Labs will provide more tooling in this area in the future
 
 ATC/SCI to check eg. package structure
+
+check branch is approved, up to date + ok status checks
+
+release override feature
+
+rollback feature
+
+txn `/SDF/TRCHECK`
+
+badi `CTS_REQUEST_CHECK`, `CHECK_BEFORE_RELEASE`

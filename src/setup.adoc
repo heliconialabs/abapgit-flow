@@ -1,19 +1,28 @@
 == Setup
 
 setup users
+  https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/blocking-command-line-pushes-that-expose-your-personal-email-address
 
 Repositories
+  https://en.wikipedia.org/wiki/Conway%27s_law
 
 Protected branches
+  https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/managing-rulesets-for-repositories-in-your-organization
 
 require up to date
 
 install abapGit
 
 install abaplint.app
+  https://docs.abaplint.app
 
 install Nuve
+  action example
+  https://github.com/heliconialabs/abaplint-app-dependent-action
 
 squash and merge
 
+delete branch at merge
+
 https://github.com/abapGit/docs.abapgit.org/issues/181
+
