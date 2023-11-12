@@ -1,0 +1,14 @@
+:plantuml-server-url: https://www.plantuml.com/plantuml
+:source-highlighter: highlightjs
+
+= abapGit Flow
+Lars Hvam, Heliconia Labs, December 2023
+:numbered:
+
+include::introduction.adoc[]
+
+include::development.adoc[]
+
+include::deployment.adoc[]
+
+include::setup.adoc[]

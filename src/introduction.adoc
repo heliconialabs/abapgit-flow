@@ -1,0 +1,31 @@
+[cols="1,3",frame=none,grid=none]
+|===
+|Home
+|link:https://github.com/heliconialabs/abapgit-flow[https://github.com/heliconialabs/abapgit-flow]
+
+|License
+|link:https://github.com/heliconialabs/abapgit-flow/blob/main/LICENSE[Creative Commons Attribution 4.0 International]
+
+|Build
+|{docdatetime}
+|===
+
+== Introduction
+
+Change based deployment, when quality assurance for a change is finished it can be deployed, ie. no sequence required.
+
+Trunk based
+
+Supported by tooling end to end
+
+central or de-central development
+
+Integrates with existing change management tools/process
+
+Flexible repository setup/split
+
+Classic on-prem development
+
+Modular monolith
+
+https://docs.github.com/en/get-started/quickstart/github-flow

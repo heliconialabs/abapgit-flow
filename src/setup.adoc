@@ -1,0 +1,19 @@
+== Setup
+
+setup users
+
+Repositories
+
+Protected branches
+
+require up to date
+
+install abapGit
+
+install abaplint.app
+
+install Nuve
+
+squash and merge
+
+https://github.com/abapGit/docs.abapgit.org/issues/181

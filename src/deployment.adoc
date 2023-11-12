@@ -1,0 +1,11 @@
+== Deployment
+
+Auditing via classic CTS
+
+Pre-production environment
+
+Transport of copies
+
+Heliconia Labs will provide more tooling in this area in the future
+
+ATC/SCI to check eg. package structure
