@@ -35,3 +35,5 @@ https://docs.github.com/en/get-started/quickstart/github-flow
 design: not full deployment automation, manual test on TST
 
 design: independent changes, in random order to production (ie. not release based)
+
+design: SAP system initiates all communication, no Cloud -> On-prem connections
