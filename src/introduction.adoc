@@ -4,7 +4,7 @@
 |link:https://github.com/heliconialabs/abapgit-flow[https://github.com/heliconialabs/abapgit-flow]
 
 |License
-|Copyright Heliconia Labs 2023
+|(C) Heliconia Labs, 2023
 
 |Build
 |{docdatetime}
@@ -12,28 +12,50 @@
 
 == Introduction
 
-feature based deployment, when quality assurance for a change is finished it can be deployed, ie. no sequence required.
+link:https://abapgit.org[abapGit] flow is a end-to-end development and deployment process for SAP ABAP systems. It allows for a modern development process, with a focus on quality and speed, where feature can be deployed independently in any order.
 
-Supported by tooling end to end
+=== Key Features
 
-central or de-central development
+Central or de-central development
+
+Quality built-in, with automated testing and code reviews
 
 Integrates with existing change management tools/process
 
 Flexible repository setup/split
 
-Classic on-prem development
+Classic on-prem development, 7.02 and up
 
-Modular monolith
+Modular monolith approach
 
-editor independent
+Keeping the core moving
+
+* towards the future
+* cleanup and refactoring
+
+Editor independent
+
+* SE24/SE80
+* Eclipse ADT
+* vscode standalone ABAP development
 
 AI ready
 
-https://docs.github.com/en/get-started/quickstart/github-flow
+* link:https://github.com/features/copilot[GitHub Copilot]
+* link:https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/[GitHub Copilot X]
+* link:https://githubnext.com/projects/copilot-workspace/[GitHub Copilot Workspace]
+
+
+=== Key Design Decisions
 
 design: not full deployment automation, manual test on TST
+can be adjusted to customer scenario
 
 design: independent changes, in random order to production (ie. not release based)
 
 design: SAP system initiates all communication, no Cloud -> On-prem connections
+
+design: using github as the central repository
+can be adjusted to customer scenario
+
+For product/add-on development which is typically released as a whole, instead of per feature, see whitepaper link:https://docs.heliconialabs.com/abap-product-development.pdf[ABAP Product Development].
