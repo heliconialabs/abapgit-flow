@@ -16,30 +16,55 @@ link:https://abapgit.org[abapGit] flow is a end-to-end development and deploymen
 
 === Key Features
 
-Central or de-central development
+*Quality built-in, with automated testing and code reviews*
 
-Quality built-in, with automated testing and code reviews
+Leverage the power of automated testing, and code reviews, to ensure quality is built-in from the start. This allows for a fast development process, without sacrificing quality.
 
-Integrates with existing change management tools/process
+*Independent changes, in any order to production*
 
-Flexible repository setup/split
+Using classic CTS for deployment, changes can be moved to production when they are ready, without having to wait for other changes to be ready.
 
-Classic on-prem development, 7.02 and up
+*Integrates with existing change management tools/process*
 
-Modular monolith approach
+The development process can be adjusted to fit the needs of the customer, and the existing tools and processes.
+None of the example tools listed below are mandatory, and can be replaced with other tools, or removed completely.
 
-Keeping the core moving
+Examples: Tosca, Worksoft, Service Now, Jira, Basis Technologies, Rev-Trac, SAP ChaRM, Cloud ALM
+
+*Central or de-central development*
+
+Traditionally, ABAP development is done in a central development system, where all developers work on the same code base. This can be a bottleneck, and slow down the development process. With abapGit flow, the development can be done in a de-central way, where each developer works on their own system and pushes changes to git.
+
+However, de-central development is not a requirement in abapGit flow
+
+*Flexible repository setup/split*
+
+The repository setup can be adjusted along the way, to fit the needs of the development team. The repository can be split into multiple repositories, or merged into one, without affecting the development process.
+
+*Classic on-prem development, 7.02 and up*
+
+Works on most SAP ABAP on-prem systems, upgrade tooling at any time, no need to wait for SAP to release new features. No need to upgrade to newest S/4 HANA to get the latest development tools.
+
+*Modular monolith approach*
+
+_todo, write Blog post about this_
+
+*Keeping the core moving*
 
 * towards the future
 * cleanup and refactoring
 
-Editor independent
+*Editor independent*
+
+Use any editor the developer is comfortable with, including:
 
 * SE24/SE80
 * Eclipse ADT
-* vscode standalone ABAP development
+* link:https://code.visualstudio.com/[Visual Studio Code], link:https://marketplace.visualstudio.com/items?itemName=larshp.standalone-abap-development[standalone ABAP development]
+* link:https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files[GitHub web editor]
+* link:https://docs.github.com/en/codespaces/the-githubdev-web-based-editor[github.dev]
 
-AI ready
+*AI ready*
 
 * link:https://github.com/features/copilot[GitHub Copilot]
 * link:https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/[GitHub Copilot X]
