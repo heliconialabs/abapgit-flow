@@ -14,4 +14,6 @@ image::img/foo.drawio.svg[]
 
 image::img/feature_branches.drawio.svg[]
 
+Avoid long lived branches, but its possible to do:
+
 image::img/project_and_maintenance.drawio.svg[]
