@@ -9,3 +9,9 @@ examples
 Technical Quality assurance & Functional Quality assurance
 
 image::img/foo.drawio.svg[]
+
+=== Branching
+
+image::img/feature_branches.drawio.svg[]
+
+image::img/project_and_maintenance.drawio.svg[]
