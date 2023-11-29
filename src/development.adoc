@@ -1,5 +1,9 @@
 == Development
 
+Development is done centrally in DEV and/or de-centrally in the Nuve systems.
+
+
+
 scoping: reduce task size, deploy often
 
 development guidelines impact: packages, message classes, reduce size
@@ -10,7 +14,7 @@ Technical Quality assurance & Functional Quality assurance
 
 image::img/foo.drawio.svg[]
 
-=== Branching
+=== Branching Examples
 
 image::img/feature_branches.drawio.svg[]
 

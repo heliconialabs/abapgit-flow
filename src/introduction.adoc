@@ -73,7 +73,6 @@ Get ready for AI powered development, by moving the ABAP code to git opens up fo
 * link:https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/[GitHub Copilot X]
 * link:https://githubnext.com/projects/copilot-workspace/[GitHub Copilot Workspace]
 
-
 === Key Design Decisions
 
 The default setup described in this document includes the following design decisions:
@@ -87,8 +86,32 @@ However, the design can be adjusted to fit the needs of the customer, and the ex
 
 For product/add-on development which is typically released as a whole, instead of per feature, see whitepaper link:https://docs.heliconialabs.com/abap-product-development.pdf[ABAP Product Development].
 
+=== Nuve Platform
+
+_todo_
+
+link:https://www.nuveplatform.com[Nuve Platform]
+
+Unit testing feedback in a continuous integration setup and decentralized development
+
+=== abaplint.app
+
+_todo_
+
+link:https://abaplint.app[abaplint.app]
+
+Static analysis of ABAP code, helping reminding developers of best practices and common mistakes.
+
+Code insights and statistics
+
 === Example landscape
 
-_todo, some text here_
+For the setup and examples in this document, the following landscape is used:
 
-image::img/example_landscape.drawio.svg[]
+image::img/example_landscape.drawio.svg[align="center"]
+
+- DEV is the central development system, managed by the customer infrastructure team
+- TST is used for testing and sign-off by business
+- STG staging system to do final validation before moving to production
+- PRD production environment
+
