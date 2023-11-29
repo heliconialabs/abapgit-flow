@@ -7,8 +7,18 @@ Lars Hvam, Heliconia Labs, December 2023
 
 include::introduction.adoc[]
 
+<<<
+
+include::process.adoc[]
+
+<<<
+
 include::development.adoc[]
 
+<<<
+
 include::deployment.adoc[]
+
+<<<
 
 include::setup.adoc[]
