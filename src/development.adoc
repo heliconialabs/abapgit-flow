@@ -2,22 +2,28 @@
 
 Development is done centrally in DEV and/or de-centrally in the Nuve systems.
 
+The package structure is split into sizeable packages, corresponding to the areas of responsibility inside the system. Each area has one or more repositories on GitHub.
 
+Before starting the development, the tasks are scoped to a reasonable size. The tasks are then assigned to the developers. The developers create a branch for the task and start working on it. The branch is pushed to GitHub and a pull request is created.
 
-scoping: reduce task size, deploy often
+_Technical Quality assurance & Functional Quality assurance_
 
-development guidelines impact: packages, message classes, reduce size
+=== Branching examples
 
-examples
+Developers create feature branches based on `main`, and create a draft pull request when the first commits are pushed. Push often, both to get a backup, increase visibility, and get the feedback from continuous integration.
 
-Technical Quality assurance & Functional Quality assurance
+If the branch is not up to date, the developer can press the "Update branch" button to get the latest changes from `main`.
 
-image::img/foo.drawio.svg[]
+When the transport is moved to production, the pull request is squashed into `main` and the branch is deleted.
 
-=== Branching Examples
+image::img/feature_branches.drawio.svg[align="center"]
 
-image::img/feature_branches.drawio.svg[]
+It is also possible to have a more long lived branch, here a `project` branch is created from `main`, and the features are developed from that. But do try to avoid long lived branches, keep moving changes to production if possible, or make it possible via eg. feature flags.
 
-Avoid long lived branches, but its possible to do:
+image::img/project_and_maintenance.drawio.svg[align="center"]
 
-image::img/project_and_maintenance.drawio.svg[]
+=== Development guidelines recommendations
+
+Typically customer developments consists of multiple independent objects. These objects can be organized into small packages. Example: one package with a transaction, report, message class, and a global class for business logic.
+
+Reduce reuse of message classes, create many, eg. one for each global class. This will reduce the risk of conflicts in the message class XML file. abaplint rule `easy_to_find_messages` can be used to enforce this, while making it easier to find the exact place a message is issued.
