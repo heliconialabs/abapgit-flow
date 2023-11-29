@@ -86,3 +86,9 @@ The default setup described in this document includes the following design decis
 However, the design can be adjusted to fit the needs of the customer, and the existing tools and processes.
 
 For product/add-on development which is typically released as a whole, instead of per feature, see whitepaper link:https://docs.heliconialabs.com/abap-product-development.pdf[ABAP Product Development].
+
+=== Example landscape
+
+_todo, some text here_
+
+image::img/example_landscape.drawio.svg[]
