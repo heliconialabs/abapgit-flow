@@ -1,5 +1,16 @@
 == Deployment
 
+When development is done, unit tested and reviewed, the next step is to deploy the changes to production.
+This is done via the classic Change and Transport System (CTS).
+
+=== Deployment Process Overview
+
+something something
+
+image::img/deployment.drawio.svg[align="center"]
+
+=== todo
+
 Auditing via classic CTS
 
 Pre-production environment
@@ -27,5 +38,3 @@ feedback loop, if something fails late in the process, something early in the pr
 === Rollback
 
 rollback feature
-
-image::img/deployment.drawio.svg[align="center"]
