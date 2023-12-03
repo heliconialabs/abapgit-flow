@@ -4,8 +4,6 @@ Auditing via classic CTS
 
 Pre-production environment
 
-Transport of copies
-
 Heliconia Labs will provide more tooling in this area in the future
 
 ATC/SCI to check eg. package structure
@@ -14,12 +12,20 @@ check branch is approved, up to date + ok status checks
 
 release override feature
 
-rollback feature
+badi `CTS_REQUEST_CHECK`, `CHECK_BEFORE_RELEASE`
+
+irreversible changes, eg. DDIC => abaplint.app feature / warning
+
+=== Sequencing
 
 txn `/SDF/TRCHECK`
 
-badi `CTS_REQUEST_CHECK`, `CHECK_BEFORE_RELEASE`
-
 finding possible sequence issues early => abaplint.app feature
 
-irreversible changes, eg. DDIC => abaplint.app feature / warning
+feedback loop, if something fails late in the process, something early in the process should be fixed to catch it
+
+=== Rollback
+
+rollback feature
+
+image::img/deployment.drawio.svg[align="center"]

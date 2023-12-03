@@ -4,9 +4,20 @@ Development is done centrally in DEV and/or de-centrally in the Nuve systems.
 
 The package structure is split into sizeable packages, corresponding to the areas of responsibility inside the system. Each area has one or more repositories on GitHub.
 
-Before starting the development, the tasks are scoped to a reasonable size. The tasks are then assigned to the developers. The developers create a branch for the task and start working on it. The branch is pushed to GitHub and a pull request is created.
+Before starting the development, the tasks are scoped to a reasonable size.
+Then tasks are assigned to developers, and the developers create a branch for the task and start working on it. The branch is pushed to GitHub and a pull request is created.
 
-_Technical Quality assurance & Functional Quality assurance_
+=== Technical Quality Assurance
+
+Feedback regarding static analysis and unit tests is given by the continuous integration system. The developer can see the feedback in the pull request, and fix any issues.
+
+Fast running feedback is prioritized first, if they are successful, longer more precise tests are run.
+
+When the functionality is ready, the developer sets the pull request to "Ready for review", and collaborates with the peer reviewer until the pull request is approved.
+
+For de-central development, approved pull requests are mirrored into central DEV.
+
+After moving a transport of copies to the TST system, the development is ready for functional testing, and sign-off by business.
 
 === Branching examples
 
