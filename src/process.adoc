@@ -1,3 +1,5 @@
 == End to End Process
 
+There are many steps in the end-to-end process, however, users are guided through the steps via tooling and automation.
+
 image::img/process.drawio.svg[align="center"]

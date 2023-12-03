@@ -5,36 +5,38 @@ This is done via the classic Change and Transport System (CTS).
 
 === Deployment Process Overview
 
-something something
+Most steps of the deployment process are automated, if something fails this late in the process, something early in the process should be fixed to catch it.
 
 image::img/deployment.drawio.svg[align="center"]
 
-=== todo
+=== System SCI checks
 
-Auditing via classic CTS
+Static analysis feedback is provided to the developer already on the first push.
 
-Pre-production environment
+While on GitHub, the code only knows about the code, and not the structuring of the system, so additional SAP Code Inspector (SCI) checks can be performed on the system, eg. to check the package structure.
 
-Heliconia Labs will provide more tooling in this area in the future
-
-ATC/SCI to check eg. package structure
-
-check branch is approved, up to date + ok status checks
-
-release override feature
-
-badi `CTS_REQUEST_CHECK`, `CHECK_BEFORE_RELEASE`
-
-irreversible changes, eg. DDIC => abaplint.app feature / warning
+If there are any issues found in SCI, it should be used as feedback to improve the information provided to the developer in the development process.
 
 === Sequencing
 
-txn `/SDF/TRCHECK`
+Developments have dependencies, sometimes these are not already in production.
 
-finding possible sequence issues early => abaplint.app feature
+This can be discovered already in the pull request during development, eg. via the abaplint.app cross check or parallel changes feature.
 
-feedback loop, if something fails late in the process, something early in the process should be fixed to catch it
+To help checking the SAP standard transaction `/SDF/TRCHECK` can be used.
+
+And for final verification, the transport is imported into the `STG` system, just previously to importing into the `PRD` system.
+
+// todo, Heliconia Labs will provide more tooling in this area in the future
 
 === Rollback
 
-rollback feature
+Transports can be rolled back by creating an additional transport with the same contents. These can be created from the abapGit flow screen.
+
+// todo, implement rollback feature
+
+// todo, BAdI `CTS_REQUEST_CHECK`, `CHECK_BEFORE_RELEASE`
+
+// todo, reconciliation ?
+
+// todo, irreversible changes, eg. DDIC => abaplint.app feature / warning

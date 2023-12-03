@@ -45,9 +45,9 @@ The repository setup can be adjusted along the way, to fit the needs of the deve
 
 Works on most SAP ABAP on-prem systems, upgrade tooling at any time, no need to wait for SAP to release new features. No need to upgrade to newest S/4 HANA to get the latest development tools.
 
-*Modular monolith approach*
+// *Modular monolith approach*
 
-_todo, write Blog post about this_
+//_todo, write Blog post about this_
 
 *Keeping the core moving*
 
@@ -88,21 +88,19 @@ For product/add-on development which is typically released as a whole, instead o
 
 === Nuve Platform
 
-_todo_
+Nuve Platform provides de-central development systems, and automated unit testing in real systems in a continuous integration setup.
 
 link:https://www.nuveplatform.com[Nuve Platform]
 
-Unit testing feedback in a continuous integration setup and decentralized development
-
 === abaplint.app
 
-_todo_
+abaplint.app provides fast configurable static analysis of ABAP code, with code insights and statistics.
+
+Configuration is versioned and changed like code, any developer can suggest changes and changes are reviewed before being merged.
+
+All developers have access to insights and statistics, without additional infrastructure setup or maintenance.
 
 link:https://abaplint.app[abaplint.app]
-
-Static analysis of ABAP code, helping reminding developers of best practices and common mistakes.
-
-Code insights and statistics
 
 === Example landscape
 
