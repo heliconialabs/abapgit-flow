@@ -88,7 +88,11 @@ For product/add-on development which is typically released as a whole, instead o
 
 === Nuve Platform
 
-Nuve Platform provides de-central development systems, and automated unit testing in real systems in a continuous integration setup.
+Nuve Platform offers decentralized development systems and automated unit testing, streamlining continuous integration processes.
+
+The platform features a self-service portal that enables developers to manage the lifecycle of SAP development instances easily, without requiring Basis expertise. Instances are provisioned in minutes, facilitating a cost-effective and practical decentralized development setup.
+
+Nuve's GitHub integration automates the execution of unit tests within your workflow. This ensures valid results by running tests in real systems.
 
 link:https://www.nuveplatform.com[Nuve Platform]
 
