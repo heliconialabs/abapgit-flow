@@ -5,21 +5,19 @@ This is done via the classic Change and Transport System (CTS).
 
 === Deployment Process Overview
 
-Most steps of the deployment process are automated, if something fails this late in the process, something early in the process should be fixed to catch it.
+Most steps of the deployment process are automated. A failure at a late stage indicates a need for earlier process improvements to detect such issues.
 
 image::img/deployment.drawio.svg[align="center"]
 
 === System SCI checks
 
-Static analysis feedback is provided to the developer already on the first push.
+Static analysis feedback is provided to the developer immediately on the first push.
 
-While on GitHub, the code only knows about the code, and not the structuring of the system, so additional SAP Code Inspector (SCI) checks can be performed on the system, eg. to check the package structure.
-
-If there are any issues found in SCI, it should be used as feedback to improve the information provided to the developer in the development process.
+In GitHub, the code is isolated from the system's structure. SAP Code Inspector (SCI) can be used to perform additional checks, especially for assessing aspects like package structure, which GitHub alone does not handle.
 
 === Sequencing
 
-Developments have dependencies, sometimes these are not already in production.
+Development projects often have dependencies that may not yet be available in the production environment. This can cause issues when moving the transport to production.
 
 This can be discovered already in the pull request during development, eg. via the abaplint.app cross check or parallel changes feature.
 
@@ -31,7 +29,7 @@ And for final verification, the transport is imported into the `STG` system, jus
 
 === Rollback
 
-Transports can be rolled back by creating an additional transport with the same contents. These can be created from the abapGit flow screen.
+Transports can be rolled back by creating an additional transport with the original contents.
 
 // todo, implement rollback feature
 
