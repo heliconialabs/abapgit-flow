@@ -2,7 +2,7 @@
 :source-highlighter: highlightjs
 
 = abapGit Flow
-Lars Hvam, Heliconia Labs, December 2023
+Lars Hvam, Heliconia Labs, April 2024
 :numbered:
 
 include::introduction.adoc[]
